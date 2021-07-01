@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#!/usr/bin/python3
+#### this is old -> /usr/bin/env python
 
 """
 Name: submit_performance_test_to_queue.py
@@ -39,10 +40,14 @@ After the job completes, you will find data and auto-generated plots in these di
 """
 
 import subprocess
+import sys 
 import argparse
 import shlex
 import numpy as np
 import os
+
+subprocess.check_call([sys.executable, '-m', 'pip', 'install',  '--user', 'numpy'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install',  '--user', 'matplotlib'])
 
 parser = \
     argparse.ArgumentParser(description=__doc__,
