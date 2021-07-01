@@ -8,7 +8,7 @@ Date: July 6, 2018
 
 Submits request for a batch job to carry out successive performance runs starting from maximum
 number of tasks.  Load modules before calling this script.
-
+Here, tasks are synonymous to number of cores. 
 command format:
 ./submit_performance_test_to_queue.py -M <Maximum Tasks> -m <Minimum Tasks> -n <machine_name> -r <resolution_name>
 
