@@ -2,8 +2,9 @@ This automated performance testing suite was created by Divya Jaganathan for
 the Parallel Computing Summer Research Institute, 2018, with guidance from Mark
 Petersen, LANL.
 
-Prerequisites: 
-
+submit_performance_test_to_queue.py will install matplotlib and numpy. 
+You can copy the "pip" lines to manually install these packages in an interactive
+session if you prefer. 
 
 To run a performance test, start in any MPAS-Ocean run directory and add links to:
 - ocean_model
