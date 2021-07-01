@@ -145,9 +145,9 @@ elif machine_name[0:5] == 'theta':
     runcommand = "qsub -n %d --jobname=%s -O %s 'performance_test.py' %d %d %s %d %s" % (
         NODES_REQUIRED, job_id, output_name, max_tasks, min_tasks, machine_long_name, cores_per_node, resolution_name)
 else:
-    print "Invalid machine or have not mentioned haswell or knl on Cori"
+    print("Invalid machine or have not mentioned haswell or knl on Cori")
 
 
-print "running: ", runcommand
+print("running: ", runcommand)
 s_args = shlex.split(runcommand)
 subprocess.check_call(s_args)
