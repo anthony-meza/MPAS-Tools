@@ -40,6 +40,7 @@ After the job completes, you will find data and auto-generated plots in these di
 """
 
 import subprocess
+subprocess.call(['sh', 'module_load.sh'])
 import sys 
 import argparse
 import shlex
