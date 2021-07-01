@@ -1,0 +1,3 @@
+import subprocess
+(['source', '/global/homes/a/ameza9/miconda3/etc/profile.d/conda.sh'])
+(['conda', 'activate', 'dev_compass_1.0.0'])
