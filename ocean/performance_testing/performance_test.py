@@ -111,7 +111,7 @@ while i >= nprocs_min:
     sum = 0
 
     # Generate the log and graph files
-    subprocess.check_call(['./metis', 'graph.info', str(i)])
+    subprocess.check_call(['gpmetis', 'graph.info', str(i)])
     print("metis" + str(i) + "completed")
 
     for sample in range(nsamples_per_procnum):
